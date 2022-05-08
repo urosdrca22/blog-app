@@ -1,10 +1,14 @@
-
+import SearchForm from "./SearchForm";
+import Stories from "./Stories";
+import Buttons from "./Buttons";
 
 function App() {
   return (
-    <div className="App">
-      Hello World
-    </div>
+    <>
+      <SearchForm />
+      <Buttons />
+      <Stories />
+    </>
   );
 }
 

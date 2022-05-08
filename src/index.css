@@ -5,9 +5,121 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(239, 238, 238);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.search-form{
+  margin: auto;
+  width: 60%;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  justify-self: center;
+}
+
+.form-input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid rgb(58, 120, 212);
+  max-width: 600px;
+  background: transparent;
+  padding: 1rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 1rem;
+}
+
+.btn-container {
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-container p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.btn-container button {
+  margin: 1rem;
+  padding: 0.25rem 0.5rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  border-color: transparent;
+  background: rgb(58, 120, 212);
+  border-radius: 0.25rem;
+  color: white;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
+.btn-container button:disabled {
+  cursor: not-allowed;
+}
+
+
+.stories-container{
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  width: 60%;
+}
+
+.story{
+  padding-left: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.read-link {
+  font-size: 0.85rem;
+  margin-right: 0.75rem;
+  text-transform: capitalize;
+  color: rgb(78, 132, 219);
+}
+
+.remove-btn {
+  background: transparent;
+  color: rgb(211, 80, 80);
+  border-color: transparent;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+}
+
+.title{
+  letter-spacing: 0.1rem;
+}
+
+.info{
+  color: hsl(210, 22%, 49%);
+}
+
+.spinner-container {
+  position: relative;
+}
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  width: 6rem;
+  height: 6rem;
+  margin: 0 auto;
+  margin-top: 10rem;
+  border-radius: 50%;
+  border: 3px solid #ccc;
+  border-top-color: var(--clr-primary-5);
+  animation: spinner 0.6s linear infinite;
 }
