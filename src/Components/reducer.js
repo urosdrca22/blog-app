@@ -4,7 +4,7 @@ import {
     REMOVE_STORY,
     HANDLE_PAGE,
     HANDLE_SEARCH
-} from './actions'
+} from '../Context/actions'
 
 const reducer = (state, action) => {
 

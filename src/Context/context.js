@@ -7,7 +7,7 @@ import {
     HANDLE_PAGE,
     HANDLE_SEARCH
 } from './actions'
-import reducer from './reducer'
+import reducer from '../Components/reducer'
 
 const API_ENDPOINT = 'https://hn.algolia.com/api/v1/search?'
 

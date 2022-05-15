@@ -1,6 +1,6 @@
-import SearchForm from "./SearchForm";
-import Stories from "./Stories";
-import Buttons from "./Buttons";
+import SearchForm from "./Components/SearchForm";
+import Stories from "./Components/Stories";
+import Buttons from "./Components/Buttons";
 
 function App() {
   return (

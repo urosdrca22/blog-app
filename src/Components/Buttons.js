@@ -1,5 +1,5 @@
 import React from 'react';
-import { useGlobalContext } from './context';
+import { useGlobalContext } from '../Context/context';
 
 const Buttons = () => {
     const { isLoading, page, nbPages, handlePage } = useGlobalContext();
